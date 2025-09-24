@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Connect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/safariconnect.jpg" alt="">
+                <div class="logo-text">
+                    <h1>Safari Connect</h1>
+                    <p>Connecting Natural Wonders</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search destinations" id="searchInput">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Explore</h3>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="saved"><i class="fas fa-heart"></i> Saved Destinations</a></li>
+                    <li><a href="#" class="nav-link" data-page="blog"><i class="fas fa-blog"></i> Conservation Blog</a></li>
+                    <li><a href="#" class="nav-link" data-page="upload"><i class="fas fa-cloud-upload-alt"></i> Upload Photos</a></li>
+                    <li><a href="#" class="nav-link" data-page="settings"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            
+            <div class="stats">
+                <h3>Conservation Stats</h3>
+                <p><i class="fas fa-paw"></i> 15+ Protected Areas</p>
+                <p><i class="fas fa-tree"></i> 100+ Species</p>
+                <p><i class="fas fa-users"></i> 50K+ Visitors</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="categories">
+                <h3>Explore by Category</h3>
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="all">All Destinations</button>
+                    <button class="category-btn" data-category="National Parks & Reserves">National Parks</button>
+                    <button class="category-btn" data-category="Wildlife Conservancies">Conservancies</button>
+                    <button class="category-btn" data-category="Indigenous Forests & Woodlands">Forests</button>
+                    <button class="category-btn" data-category="Marine & Coastal Ecosystems">Marine</button>
+                    <button class="category-btn" data-category="Threatened Species Habitats">Threatened</button>
+                    <button class="category-btn" data-category="Reforestation & Restoration Projects">Reforestation</button>
+                    <button class="category-btn" data-category="Wetlands & Rivers">Wetlands</button>
+                    <button class="category-btn" data-category="Savanna & Grasslands">Savanna</button>
+                    <button class="category-btn" data-category="Mountain & Highland Ecosystems">Mountains</button>
+                    <button class="category-btn" data-category="Community Conservancies & Eco-Tourism">Community</button>
+                </div>
+            </div>
+
+            <div id="destinationsGrid" class="destinations-grid">
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+
+            <div id="destinationDetail" class="destination-detail">
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>Safari Connect - Promoting Biodiversity Conservation in Kenya</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
