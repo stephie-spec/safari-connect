@@ -1,0 +1,254 @@
+{
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Maasai Mara National Reserve",
+      "category": "National Parks & Reserves",
+      "images": [
+        "images/maasaimara-1.jpg",
+        "images/maasaimara-2.jpg",
+        "images/maasaimara-3.jpg",
+        "images/maasaimara-4.jpg",
+        "images/maasaimara-5.jpg"
+      ],
+      "location": "Narok County, Kenya",
+      "keyFeature": "Great Wildebeest Migration",
+      "conservationStatus": "Protected",
+      "established": 1961,
+      "area": "1,510 km²",
+      "description": "The Maasai Mara National Reserve is East Africa's premier wildlife destination, renowned for the annual Great Wildebeest Migration where over 1.5 million wildebeest, zebras, and gazelles cross the Mara River. The reserve hosts exceptional populations of the Big Five (lion, leopard, elephant, buffalo, rhino) and supports Maasai pastoralist communities through conservation partnerships. Key conservation efforts include anti-poaching patrols, community conservancies that provide wildlife corridors, and sustainable tourism initiatives that fund conservation. The Mara Predator Conservation Programme monitors lion populations, while the Mara Elephant Project works to reduce human-wildlife conflict through innovative beehive fences and community education programs."
+    },
+    {
+      "id": 2,
+      "name": "Tsavo National Park",
+      "category": "National Parks & Reserves",
+      "images": [
+        "images/tsavonp-1.jpg",
+        "images/tsavonp-2.jpg",
+        "images/tsavonp-3.jpg",
+        "images/tsavonp-4.jpg",
+        "images/tsavonp-5.jpg"
+      ],
+      "location": "Taita-Taveta County, Kenya",
+      "keyFeature": "Red Elephants & Volcanic Landscapes",
+      "conservationStatus": "Protected",
+      "established": 1948,
+      "area": "21,812 km²",
+      "description": "Tsavo is one of the world's largest national parks, divided into Tsavo East and Tsavo West. Famous for its 'red elephants' that dust-bathe in volcanic soil, the park features dramatic landscapes including the Yatta Plateau (world's longest lava flow) and Mzima Springs. Conservation initiatives include the Tsavo Conservation Area program that combats elephant and rhino poaching through aerial surveillance and community intelligence networks. The park partners with the Tsavo Trust to monitor endangered species, implement human-wildlife conflict mitigation strategies, and support community water projects that reduce pressure on park resources during droughts."
+    },
+    {
+      "id": 3,
+      "name": "Lake Nakuru National Park",
+      "category": "National Parks & Reserves",
+      "images": [
+        "images/lnakuru-1.jpg",
+        "images/lnakuru-2.jpg",
+        "images/lnakuru-3.jpg",
+        "images/lnakuru-4.jpg"
+      ],
+      "location": "Nakuru County, Kenya",
+      "keyFeature": "Flamingo Flocks & Rhino Sanctuary",
+      "conservationStatus": "Protected",
+      "established": 1961,
+      "area": "188 km²",
+      "description": "Lake Nakuru National Park is world-famous for its spectacular flamingo populations that create a pink hue along the alkaline lake shores. The park serves as a critical rhino sanctuary with successful breeding programs for both black and white rhinos. Conservation efforts focus on water quality management to protect the lake ecosystem from agricultural runoff and urban pollution. The park's Rhino Sanctuary Program has increased rhino populations by 200% since 1984, while the Lake Nakuru Watershed Management Plan involves local communities in reforestation and sustainable farming practices to protect the lake's catchment area."
+    },
+    {
+      "id": 4,
+      "name": "Ol Pejeta Conservancy",
+      "category": "Wildlife Conservancies",
+      "images": [
+        "images/olpejeta-1.jpg",
+        "images/olpejeta-2.jpg",
+        "images/olpejeta-3.jpg",
+        "images/olpejeta-4.jpg"
+      ],
+      "location": "Laikipia County, Kenya",
+      "keyFeature": "Rhino Conservation & Chimpanzee Sanctuary",
+      "conservationStatus": "Private Conservancy",
+      "established": 2004,
+      "area": "360 km²",
+      "description": "Ol Pejeta is East Africa's largest black rhino sanctuary and home to the world's last two northern white rhinos. The conservancy integrates cutting-edge conservation technology with community development, employing drone surveillance, seismic sensors, and specialized K-9 units for anti-poaching. The Sweetwaters Chimpanzee Sanctuary provides lifetime care for rescued chimps. Ol Pejeta's innovative conservation model includes a livestock program that demonstrates wildlife-compatible ranching, community education centers, and a solar-powered electric fence that reduces human-wildlife conflict while maintaining ecological connectivity across the Laikipia landscape."
+    },
+    {
+      "id": 5,
+      "name": "Lewa Wildlife Conservancy",
+      "category": "Wildlife Conservancies",
+      "images": [
+        "images/lewa-1.jpg",
+        "images/lewa-2.jpg",
+        "images/lewa-3.jpg",
+        "images/lewa-4.jpg"
+      ],
+      "location": "Meru County, Kenya",
+      "keyFeature": "Grevy's Zebras & Sustainable Tourism",
+      "conservationStatus": "UNESCO World Heritage Site",
+      "established": 1995,
+      "area": "250 km²",
+      "description": "Lewa Wildlife Conservancy is a UNESCO World Heritage Site renowned for its successful conservation of Grevy's zebras (15% of global population) and black rhinos. The conservancy pioneered the Northern Rangelands Trust model, supporting community-led conservation across northern Kenya. Lewa's holistic approach includes education scholarships for over 5,000 children annually, healthcare services for 40,000 people, and sustainable livelihood programs that reduce poaching pressures. Their wildlife monitoring system uses GPS collars and camera traps to track endangered species, while their community ranger program employs over 150 local people in conservation security."
+    },
+    {
+      "id": 6,
+      "name": "Aberdare National Forest",
+      "category": "Indigenous Forests & Woodlands",
+      "images": [
+        "images/aberdarenf-1.jpg",
+        "images/aberdarenf-2.jpg",
+        "images/aberdarenf-3.jpg"
+      ],
+      "location": "Central Kenya Highlands",
+      "keyFeature": "Water Towers & Black Rhinos",
+      "conservationStatus": "Protected Forest",
+      "established": 1950,
+      "area": "767 km²",
+      "description": "The Aberdare Mountain Range is one of Kenya's five main water towers, supplying water to Nairobi and central Kenya. The forest ecosystem supports endangered species like the black rhino, bongo antelope, and African golden cat. Conservation efforts focus on protecting the critical watershed through the Aberdare Ecosystem Conservation Project, which involves community forest associations in sustainable forest management. The program has established buffer zones, promoted alternative energy sources to reduce fuelwood demand, and implemented payment for ecosystem services schemes where downstream water users contribute to upstream forest conservation."
+    },
+    {
+      "id": 7,
+      "name": "Kakamega Forest",
+      "category": "Indigenous Forests & Woodlands",
+      "images": [
+        "images/kakamegaf-1.jpg",
+        "images/kakamegaf-2.jpg",
+        "images/kakamegaf-3.jpg",
+        "images/kakamegaf-4.jpg"
+      ],
+      "location": "Kakamega County, Kenya",
+      "keyFeature": "Tropical Rainforest Biodiversity",
+      "conservationStatus": "National Reserve",
+      "established": 1985,
+      "area": "238 km²",
+      "description": "Kakamega Forest is Kenya's only tropical rainforest, a remnant of the ancient Guineo-Congolian rainforest that once stretched across central Africa. The forest hosts incredible biodiversity including 400+ bird species, 300+ butterfly species, and rare primates like the De Brazza's monkey. Conservation initiatives led by the Kakamega Forest Conservation Project focus on combating deforestation through community-based ecotourism, beekeeping enterprises, and sustainable herbal medicine harvesting. The program has established tree nurseries producing 100,000+ indigenous seedlings annually and works with schools to promote environmental education, reducing illegal logging by 60% over the past decade."
+    },
+    {
+      "id": 8,
+      "name": "Watamu Marine National Park",
+      "category": "Marine & Coastal Ecosystems",
+      "images": [
+        "images/watamunp-1.jpg",
+        "images/watamunp-2.jpg",
+        "images/watamunp-3.jpg",
+        "images/watamunp-4.jpg"
+      ],
+      "location": "Kilifi County, Kenya",
+      "keyFeature": "Coral Reefs & Sea Turtles",
+      "conservationStatus": "UNESCO Biosphere Reserve",
+      "established": 1968,
+      "area": "32 km²",
+      "description": "Watamu Marine National Park is part of a UNESCO Biosphere Reserve protecting pristine coral gardens, seagrass beds, and mangrove forests. The park is crucial for endangered sea turtles (green, hawksbill, and loggerhead) that nest on its beaches. Conservation efforts include the Local Ocean Conservation's turtle rehabilitation center that has released over 10,000 rescued turtles. The Watamu Marine Association promotes sustainable fishing practices, coral reef restoration using coral gardening techniques, and beach clean-ups that remove 20+ tons of plastic annually. Community-led patrols protect nesting sites, while eco-friendly tourism supports conservation financing."
+    },
+    {
+      "id": 9,
+      "name": "Samburu National Reserve",
+      "category": "Threatened Species Habitats",
+      "images": [
+        "images/samburunr-1.jpg",
+        "images/samburunr-2.jpg",
+        "images/samburunr-3.jpg"
+      ],
+      "location": "Samburu County, Kenya",
+      "keyFeature": "Endangered Grevy's Zebras",
+      "conservationStatus": "Protected",
+      "established": 1985,
+      "area": "165 km²",
+      "description": "Samburu National Reserve protects the unique 'Special Five' species adapted to arid conditions: Grevy's zebra, Somali ostrich, reticulated giraffe, gerenuk, and Beisa oryx. The reserve is a stronghold for the endangered Grevy's zebra, with conservation programs focused on community-based monitoring and anti-poaching. The Grevy's Zebra Trust works with Samburu pastoralists to protect zebra habitats through rotational grazing plans and wildlife-compatible livelihoods. The Ewaso Lions Project reduces human-lion conflict through predator-proof livestock enclosures and a warrior conservation program that transforms traditional lion hunters into wildlife protectors."
+    },
+    {
+      "id": 10,
+      "name": "Green Belt Movement",
+      "category": "Reforestation & Restoration Projects",
+      "images": [
+        "images/greenbelt-1.jpg",
+        "images/greenbelt-2.jpg",
+        "images/greenbelt-3.jpg",
+        "images/greenbelt-4.jpg"
+      ],
+      "location": "Nationwide, Kenya",
+      "keyFeature": "Community Tree Planting",
+      "conservationStatus": "Non-profit Initiative",
+      "established": 1977,
+      "treesPlanted": "Over 51 million",
+      "description": "Founded by Nobel Peace Prize laureate Wangari Maathai, the Green Belt Movement is Africa's largest community-based tree planting initiative. The movement empowers women's groups to establish tree nurseries and plant indigenous trees to combat deforestation, soil erosion, and water scarcity. Their holistic approach combines environmental conservation with democracy, women's rights, and peace-building. The program has established over 6,000 tree nurseries managed by rural women, creating sustainable livelihoods while restoring degraded watersheds. Recent initiatives include climate change adaptation projects that promote drought-resistant crops and energy-efficient cookstoves, reducing pressure on remaining forests."
+    },
+    {
+      "id": 11,
+      "name": "Tana River Primate Reserve",
+      "category": "Wetlands & Rivers",
+      "images": [
+        "images/tanariver-1.jpg",
+        "images/tanariver-2.jpg",
+        "images/tanariver-3.jpg"
+      ],
+      "location": "Tana River County, Kenya",
+      "keyFeature": "Mangabey Monkeys & Riparian Forests",
+      "conservationStatus": "Protected",
+      "established": 1976,
+      "area": "171 km²",
+      "description": "The Tana River Primate Reserve protects the endangered Tana River mangabey and crested mangabey monkeys in one of Kenya's most important riverine forest ecosystems. Conservation efforts focus on maintaining river flow regimes critical for forest health, combating illegal logging, and involving local Pokomo communities in forest management. The Tana River Conservation Project promotes sustainable agriculture practices that reduce deforestation, establishes community forest guards, and develops eco-tourism initiatives that provide alternative livelihoods. The program also monitors hydrological changes from upstream dams that threaten the delicate flood-dependent ecosystem."
+    },
+    {
+      "id": 12,
+      "name": "Mount Kenya National Park",
+      "category": "Mountain & Highland Ecosystems",
+      "images": [
+        "images/mtkenya-1.jpg",
+        "images/mtkenya-2.jpg",
+        "images/mtkenya-3.jpg"
+      ],
+      "location": "Central Kenya",
+      "keyFeature": "Alpine Ecosystems & Glaciers",
+      "conservationStatus": "UNESCO World Heritage Site",
+      "established": 1949,
+      "area": "2,150 km²",
+      "description": "Mount Kenya National Park protects Africa's second-highest mountain and its unique alpine ecosystems, including rare high-altitude plants and animals adapted to the harsh conditions. The park is a vital water tower for 50% of Kenya's population. Conservation initiatives address glacial retreat through climate change monitoring and watershed protection programs. The Mount Kenya Trust works with communities to reduce forest encroachment through sustainable bamboo harvesting and beekeeping projects. Their elephant monitoring program uses GPS collars to track migration routes and prevent human-wildlife conflict, while reforestation efforts plant indigenous trees in degraded areas of the montane forest."
+    },
+    {
+      "id": 13,
+      "name": "Borana Conservancy",
+      "category": "Community Conservancies & Eco-Tourism",
+      "images": [
+        "images/borana-1.jpg",
+        "images/borana-2.jpg",
+        "images/borana-3.jpg"
+      ],
+      "location": "Laikipia County, Kenya",
+      "keyFeature": "Rhino Conservation & Maasai Culture",
+      "conservationStatus": "Private Conservancy",
+      "established": 1990,
+      "area": "140 km²",
+      "description": "Borana Conservancy is a pioneering model of community-inclusive conservation that successfully reintroduced black rhinos to the Laikipia Plateau. The conservancy integrates wildlife protection with sustainable cattle ranching and high-end eco-tourism that funds conservation. Borana's innovative approach includes the 'Rhino Watch' program where community members participate in rhino monitoring, and the 'Living with Lions' initiative that uses predator-proof bomas (livestock enclosures) to reduce conflict. The conservancy has removed 200+ km of fencing to create wildlife corridors connecting to neighboring conservancies, facilitating the natural movement of elephants and other migratory species across the landscape."
+    },
+    {
+      "id": 14,
+      "name": "Reteti Elephant Sanctuary",
+      "category": "Community Conservancies & Eco-Tourism",
+      "images": [
+        "images/reteti-1.jpg",
+        "images/reteti-2.jpg",
+        "images/reteti-3.jpg"
+      ],
+      "location": "Samburu County, Kenya",
+      "keyFeature": "Orphaned Elephant Rehabilitation",
+      "conservationStatus": "Community-Owned Sanctuary",
+      "established": 2016,
+      "elephantsRescued": "40+",
+      "description": "Reteti Elephant Sanctuary is Africa's first community-owned elephant orphanage, operated by the Samburu people who have transformed from traditional elephant hunters to dedicated protectors. The sanctuary rescues and rehabilitates orphaned elephant calves with the goal of returning them to the wild. Conservation impact includes changing local attitudes toward wildlife, creating conservation jobs for Samburu women and men, and establishing community-led anti-poaching networks. The sanctuary's innovative model includes using camels to transport milk for the orphans and developing a wildlife credit system where communities earn benefits for protecting elephants, demonstrating that wildlife conservation can provide tangible benefits to local people."
+    },
+    {
+      "id": 15,
+      "name": "Mara River Wetlands",
+      "category": "Wetlands & Rivers",
+      "images": [
+        "images/mara-1.jpg",
+        "images/mara-2.jpg",
+        "images/mara-3.jpg"
+      ],
+      "location": "Narok County, Kenya",
+      "keyFeature": "Hippo Populations & Wildebeest Crossings",
+      "conservationStatus": "Ramsar Site",
+      "established": 2005,
+      "area": "65 km²",
+      "description": "The Mara River Wetlands form a critical ecosystem supporting the annual wildebeest migration and maintaining water quality for downstream communities in Kenya and Tanzania. This Ramsar-designated wetland hosts significant hippo populations and serves as a dry-season refuge for wildlife. Conservation efforts through the Mara River Basin Initiative focus on reducing sedimentation from deforestation, controlling agricultural pollution, and maintaining natural flow regimes. Community water user associations promote sustainable water extraction, while wetland restoration projects reclaim degraded areas through native vegetation planting. The program monitors water quality in real-time and works with tea and flower farms to implement best practices that reduce chemical runoff into the river system."
+    }
+  ]
+}
