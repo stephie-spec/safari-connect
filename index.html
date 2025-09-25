@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="header-content">
             <div class="logo">
-                <img src="images/safariconnect.jpg" alt="">
+                <img src="images/safariconnect-1.jpg" alt="">
                 <div class="logo-text">
-                    <h1>Safari Connect</h1>
                     <p>Connecting Natural Wonders</p>
                 </div>
             </div>
@@ -26,19 +27,19 @@
 
     <div class="container">
         <aside class="sidebar">
-            <h3>Explore</h3>
+            <h4>Explore</h4>
             <nav>
                 <ul>
                     <li><a href="#" class="nav-link active" data-page="home"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#" class="nav-link" data-page="saved"><i class="fas fa-heart"></i> Saved Destinations</a></li>
-                    <li><a href="#" class="nav-link" data-page="blog"><i class="fas fa-blog"></i> Conservation Blog</a></li>
-                    <li><a href="#" class="nav-link" data-page="upload"><i class="fas fa-cloud-upload-alt"></i> Upload Photos</a></li>
-                    <li><a href="#" class="nav-link" data-page="settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#" class="nav-link" data-page="blog"><i class="fas fa-square-rss"></i>Blog</a></li>
+                    <li><a href="#" class="nav-link" data-page="upload"><i class="fas fa-cloud-arrow-up"></i> Upload
+                            Photos</a></li>
+                    <li><a href="#" class="nav-link" data-page="settings"><i class="fas fa-gear"></i> Settings</a></li>
                 </ul>
             </nav>
-            
+
             <div class="stats">
-                <h3>Conservation Stats</h3>
+                <h4>Conservation Stats</h4>
                 <p><i class="fas fa-paw"></i> 15+ Protected Areas</p>
                 <p><i class="fas fa-tree"></i> 100+ Species</p>
                 <p><i class="fas fa-users"></i> 50K+ Visitors</p>
@@ -55,11 +56,13 @@
                     <button class="category-btn" data-category="Indigenous Forests & Woodlands">Forests</button>
                     <button class="category-btn" data-category="Marine & Coastal Ecosystems">Marine</button>
                     <button class="category-btn" data-category="Threatened Species Habitats">Threatened</button>
-                    <button class="category-btn" data-category="Reforestation & Restoration Projects">Reforestation</button>
+                    <button class="category-btn"
+                        data-category="Reforestation & Restoration Projects">Reforestation</button>
                     <button class="category-btn" data-category="Wetlands & Rivers">Wetlands</button>
                     <button class="category-btn" data-category="Savanna & Grasslands">Savanna</button>
                     <button class="category-btn" data-category="Mountain & Highland Ecosystems">Mountains</button>
-                    <button class="category-btn" data-category="Community Conservancies & Eco-Tourism">Community</button>
+                    <button class="category-btn"
+                        data-category="Community Conservancies & Eco-Tourism">Community</button>
                 </div>
             </div>
 
@@ -68,14 +71,49 @@
 
             <div id="destinationDetail" class="destination-detail">
             </div>
+            <div id="blogPage" class="page-content" style="display: none;">
+                <h2>Blog</h2>
+                <div class="article">
+                <h3>A Collaborative Effort</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                </div>
+            </div>
+            <div id="uploadPage" class="page-content" style="display: none;">
+                <h2>Upload Photos</h2>
+                <div class="upload-form">
+                <input type="text" name="name" id="nameInput" placeholder="Name"><br>
+                <input type="text" name="category" id="categoryInput" placeholder="Category"><br>
+                <input type="text" name="location" id="locationInput" placeholder="Location"><br>
+                <input type="text" name="keyFeature" id="keyFeatureInput" placeholder="Key Feature"><br>
+                <input type="text" name="conservationStatus" id="conservationStatusInput" placeholder="Conservation Status"><br>
+                <input type="number" name="established" id="establishedInput" placeholder="Established"><br>
+                <input type="text" name="area" id="areaInput" placeholder="Area"><br>
+                <textarea name="description" id="descriptionInput" placeholder="Enter Description"></textarea><br>
+                <input type="file" name="images" id="imagesInput">
+                <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </div>
+            <div id="settingsPage" class="page-content" style="display: none;">
+                <h1>Settings</h1>
+            </div>
         </main>
     </div>
-
     <footer>
         <div class="footer-content">
-            <p>Safari Connect - Promoting Biodiversity Conservation in Kenya</p>
+            <p>Safari Connect</p>
         </div>
     </footer>
     <script src="js/index.js"></script>
 </body>
+
 </html>

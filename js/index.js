@@ -1,6 +1,7 @@
-const API_URL = 'http://localhost:3000/destinations';
 const destinationsGrid = document.getElementById('destinationsGrid');
 const destinationDetail = document.getElementById('destinationDetail');
+const mainContent = document.querySelector('.main-content');
+const categories = document.querySelector('.categories');
 const categoryBtns = document.querySelectorAll('.category-btn');
 const navLinks = document.querySelectorAll('.nav-link');
 const searchInput = document.getElementById('searchInput');
@@ -10,8 +11,10 @@ let currentDestinations = [];
 let currentCategory = 'all';
 let currentDetailId = null;
 
+fetchDestinations();
+
 function fetchDestinations() {
-    
+
     fetch(`http://localhost:3000/destinations`)
         .then(response => {
             return response.json();
@@ -29,7 +32,7 @@ function fetchDestinations() {
 function displayDestinations(destinations) {
     console.log('Displaying destinations:', destinations);
     destinationsGrid.innerHTML = '';
-    
+
     destinations.forEach(destination => {
         const destinationCard = document.createElement('div');
         destinationCard.className = 'destination-card';
@@ -38,8 +41,8 @@ function displayDestinations(destinations) {
                 <img src="${destination.images[0]}" alt="${destination.name}">
             </div>
             <div class="card-content">
-                <span class="category-tag">${destination.category || 'Uncategorized'}</span>
-                <h3>${destination.name || 'Unknown Destination'}</h3>
+                <span class="category-tag">${destination.category}</span>
+                <h3>${destination.name}</h3>
                 <p>${destination.description.substring(0, 120) + '...'}</p>
                 <div class="card-loc">
                     <div class="location">
@@ -52,7 +55,7 @@ function displayDestinations(destinations) {
         `;
         destinationsGrid.appendChild(destinationCard);
     });
-    
+
     document.querySelectorAll('.view-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -61,7 +64,7 @@ function displayDestinations(destinations) {
             viewDestination(id);
         });
     });
-    
+
     document.querySelectorAll('.destination-card').forEach(card => {
         card.addEventListener('click', () => {
             const id = parseInt(card.querySelector('.view-btn').getAttribute('data-id'));
@@ -74,11 +77,11 @@ function displayDestinations(destinations) {
 function viewDestination(id) {
     console.log('View destination with ID:', id);
     const destination = currentDestinations.find(dest => dest.id == id);
-    
+
     currentDetailId = id;
     destinationsGrid.style.display = 'none';
     document.querySelector('.categories').style.display = 'none';
-    
+
     destinationDetail.innerHTML = `
         <button class="back-btn" id="backToGridBtn">
             <i class="fas fa-arrow-left"></i> Back to All Destinations
@@ -86,7 +89,7 @@ function viewDestination(id) {
         <div class="detail-header">
             <div class="images-half">
                 <div class="detail-image">
-                    <img src="${destination.images && destination.images.length > 0 ? destination.images[0] : 'https://via.placeholder.com/300'}" alt="${destination.name || 'Destination'}" id="mainDetailImage" onerror="this.src='https://via.placeholder.com/300'">
+                    <img src="${destination.images[0]}" alt="${destination.name}" id="mainDetailImage">
                 </div>
                 <div class="image-gallery">
                     ${(destination.images).map((img, index) => `
@@ -124,14 +127,106 @@ function viewDestination(id) {
         </div>
     `;
     destinationDetail.classList.add('active');
-    
+
     document.getElementById('backToGridBtn').addEventListener('click', backToGrid);
-    
-    document.querySelectorAll('.gallery-thumbnail').forEach(thumb => {
-        thumb.addEventListener('click', () => {
+
+    document.querySelectorAll('.gallery-thumbnail').forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
             document.querySelectorAll('.gallery-thumbnail').forEach(t => t.classList.remove('active'));
-            thumb.classList.add('active');
-            document.getElementById('mainDetailImage').src = thumb.getAttribute('data-image');
+            thumbnail.classList.add('active');
+            document.getElementById('mainDetailImage').src = thumbnail.getAttribute('data-image');
         });
     });
 }
+
+function backToGrid() {
+    destinationDetail.classList.remove('active');
+    destinationsGrid.style.display = 'flex';
+    document.querySelector('.categories').style.display = 'block';
+    currentDetailId = null;
+}
+
+function filterDestinations(category) {
+    currentCategory = category;
+
+    categoryBtns.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-category') === category) {
+            btn.classList.add('active');
+        }
+    });
+
+    if (category === 'all') {
+        displayDestinations(currentDestinations);
+    } else {
+        const filtered = currentDestinations.filter(dest =>
+            dest.category === category
+        );
+        displayDestinations(filtered);
+    }
+}
+
+function searchDestinations(query) {
+    if (!query) {
+        filterDestinations(currentCategory);
+        return;
+    }
+
+    const filtered = currentDestinations.filter(dest =>
+        (dest.name && dest.name.toLowerCase().includes(query.toLowerCase())) ||
+        (dest.description && dest.description.toLowerCase().includes(query.toLowerCase())) ||
+        (dest.location && dest.location.toLowerCase().includes(query.toLowerCase())) ||
+        (dest.keyFeature && dest.keyFeature.toLowerCase().includes(query.toLowerCase()))
+    );
+
+    displayDestinations(filtered);
+}
+
+function handleNavigation(page) {
+    const mainContent = document.querySelector('.main-content');
+    const categories = document.querySelector('.categories');
+    const destinationsGrid = document.getElementById('destinationsGrid');
+    const destinationDetail = document.getElementById('destinationDetail');
+    const blogPage = document.getElementById('blogPage');
+    const uploadPage = document.getElementById('uploadPage');
+    const settingsPage = document.getElementById('settingsPage');
+
+
+    categories.style.display = 'none';
+    destinationsGrid.style.display = 'none';
+    destinationDetail.classList.remove('active');
+    blogPage.style.display = 'none';
+    uploadPage.style.display = 'none';
+    settingsPage.style.display = 'none';
+
+    if (page === 'home') {
+        backToGrid();
+    } if (page === 'blog') {
+        blogPage.style.display = 'block';
+    }
+    if (page === 'upload') {
+        uploadPage.style.display = 'block';
+    }
+    if (page === 'settings') {
+        settingsPage.style.display = 'block';
+    }
+}
+
+categoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterDestinations(btn.getAttribute('data-category'));
+    });
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        handleNavigation(link.getAttribute('data-page'));
+    });
+});
+
+searchBtn.addEventListener('click', () => {
+    searchDestinations(searchInput.value);
+});
